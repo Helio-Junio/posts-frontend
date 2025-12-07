@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+## 📝 Blog CRUD Full-Stack
+Este projeto é uma aplicação web full-stack com funcionalidades completas de CRUD (Create, Read, Update, Delete) para posts de blog, consumindo uma API RESTful.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Funcionalidades
+### Frontend (Interface do Usuário)
+Listagem de Posts: Visualização de todos os posts publicados
 
-## Available Scripts
+Criação de Posts: Formulário para criar novos posts
 
-In the project directory, you can run:
+Autoria: Cada post mostra o autor que o publicou
 
-### `npm start`
+Exclusão de Posts: Opção para deletar posts individualmente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Navegação: Interface intuitiva com botões de ação claros
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Backend (API)
+API RESTful: Endpoints para operações CRUD
 
-### `npm test`
+Operações Disponíveis:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GET /posts - Listar todos os posts
 
-### `npm run build`
+POST /posts - Criar um novo post
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+DELETE /posts/:id - Excluir um post específico
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Autenticação Simples: Sistema básico de identificação de autores
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📖 Como Usar
+Criando um Post
+Clique no botão "CRIAR POST"
 
-### `npm run eject`
+Preencha o conteúdo do post
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Informe seu nome de usuário
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clique em publicar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Visualizando Posts
+Todos os posts são listados na página principal
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Cada post mostra:
 
-## Learn More
+Conteúdo do post
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Autor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Data de publicação
+
+Botão de exclusão (apenas para o autor)
+
+Excluindo um Post
+Localize o post que deseja excluir
+
+Clique no botão "DELETAR"
+
+Confirme a exclusão
+
+Saindo da Aplicação
+Clique no botão "SAIR" para encerrar a sessão
+
+## 🗂️ Estrutura do Projeto
+```
+blog-crud-fullstack/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── middleware/
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   └── App.js
+│   └── package.json
+└── README.md
+🔌 Endpoints da API
+Posts
+GET /api/posts - Retorna todos os posts
+
+GET /api/posts/:id - Retorna um post específico
+
+POST /api/posts - Cria um novo post
+
+DELETE /api/posts/:id - Exclui um post
+```
+
+
+## Autores
+ - Hélio Ferreira
+ - Guilherme Salatiel
+ - Oscar Lara
